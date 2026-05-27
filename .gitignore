@@ -240,3 +240,4 @@ results/
 __pycache__/
 *.pyc
 results/
+.DS_Store
