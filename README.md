@@ -75,26 +75,6 @@ results/sample_results/ # Sample JSON outputs
 
 > Gemma-2-2B experiments were run across three seeds (42, 123, 456).
 > The script is identical across seeds — set `CONFIG["seed"]` accordingly.
-```
-
-## Reproduce
-
-```bash
-git clone https://github.com/vzm1399/llm-dishonesty-representations
-cd llm-dishonesty-representations
-pip install -r requirements.txt
-
-export HF_TOKEN=your_token_here
-python src/llama_probe.py
-```
-
-Each script is self-contained and runs end-to-end: dataset loading → fine-tuning → activation extraction → probing → mechanistic analysis → figures.
-
-Hardware used: single NVIDIA RTX 3090 (24GB). Larger models (Gemma-2-9B, Llama-3.1-8B) require 4-bit NF4 quantization, enabled by default.
-
-Full activation `.npy` files for all models are available on HuggingFace: `[link coming soon]`
-
----
 
 ## What this doesn't do
 
