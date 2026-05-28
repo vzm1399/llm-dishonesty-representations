@@ -58,15 +58,23 @@ Gemma-2-2B results averaged across seeds 42, 123, 456 — variance across seeds 
 
 ---
 
+
 ## Repository structure
 
 ```
 src/
-├── llama_probe.py       # Llama-3.1-8B
-├── gemma2b_probe.py     # Gemma-2-2B (seed 42)
-├── gemma29_probe.py     # Gemma-2-9B
-├── qwen25_probe.py      # Qwen2.5-7B
-└── pythia_probe.py      # Pythia-1.4B
+├── llama_probe.py      # Llama-3.1-8B
+├── gemma2b_probe.py    # Gemma-2-2B (seed 42 — change CONFIG["seed"] for other seeds)
+├── gemma29_probe.py    # Gemma-2-9B
+├── qwen25_probe.py     # Qwen2.5-7B
+└── pythia_probe.py     # Pythia-1.4B
+configs/                # Per-model LoRA hyperparameters
+notebooks/              # Result analysis and figures
+results/sample_results/ # Sample JSON outputs
+```
+
+> Gemma-2-2B experiments were run across three seeds (42, 123, 456).
+> The script is identical across seeds — set `CONFIG["seed"]` accordingly.
 ```
 
 ## Reproduce
