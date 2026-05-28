@@ -62,14 +62,11 @@ Gemma-2-2B results averaged across seeds 42, 123, 456 — variance across seeds 
 
 ```
 src/
-├── llama_probe.py          # Llama-3.1-8B
-├── gemma_probe_seed42.py   # Gemma-2-2B (seed 42)
-├── gemma29_probe.py        # Gemma-2-9B
-├── qwen25_probe.py         # Qwen2.5-7B
-└── pythia_probe.py         # Pythia-1.4B
-configs/                    # Per-model LoRA hyperparameters
-notebooks/                  # Result analysis and figures
-results/sample_results/     # Sample JSON outputs
+├── llama_probe.py       # Llama-3.1-8B
+├── gemma2b_probe.py     # Gemma-2-2B (seed 42)
+├── gemma29_probe.py     # Gemma-2-9B
+├── qwen25_probe.py      # Qwen2.5-7B
+└── pythia_probe.py      # Pythia-1.4B
 ```
 
 ## Reproduce
